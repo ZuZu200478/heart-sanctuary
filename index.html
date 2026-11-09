@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f1">
+  <meta name="description" content="心靈療癒室：一個記錄心情、閱讀溫暖文字、練習自我照顧的安靜角落。">
+  <title>心靈療癒室｜給心一個休息的地方</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="心靈療癒室首頁"><span class="brand-icon">✿</span><span>心靈療癒室<small>THE GENTLE ROOM</small></span></a>
+    <nav aria-label="主要導覽" class="nav"><a class="current" href="index.html">首頁</a><a href="#library">療癒文章</a><a href="practice.html">放鬆練習</a><a href="journal.html">心情日記</a><a href="guide.html">網站指南</a></nav>
+    <a class="nav-highlight" href="journal.html">寫下今天的心情 <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main id="main">
+    <section class="hero"><div class="container hero-layout">
+      <div class="hero-text"><span class="eyebrow"><span class="sparkle">✺</span> YOUR COZY LITTLE CORNER</span>
+        <h1>今天的你，<br>也值得被<span class="underline-flower">溫柔對待。</span></h1>
+        <p>不必每一天都充滿力量。這裡有一些文字、一點寧靜，和一個可以慢慢整理心情的角落。先照顧好現在的自己，就很好。</p>
+        <div class="hero-buttons"><a href="#library" class="btn btn-primary">走進療癒角落 <span aria-hidden="true">↗</span></a><a href="practice.html" class="btn btn-outline">一起放鬆一下 <span aria-hidden="true">→</span></a></div>
+        <span class="hero-footnote">✧ 在自己的步調裡，慢慢變好就好。</span>
+      </div>
+      <div class="hero-art" role="img" aria-label="小兔與小熊在溫暖窗邊休息的可愛插畫">
+        <span class="art-stamp">slow down ♡<br>it's okay</span>
+        <img class="hero-illustration" src="assets/illustrations/hero-bunny.svg" alt="" width="760" height="590" fetchpriority="high">
+        <span class="hero-speech">今天也辛苦啦 <span aria-hidden="true">♡</span></span>
+      </div>
+    </div></section>
+    <section class="mood-strip"><div class="container mood-layout"><div class="mood-heading"><span>♡</span><div><h2>今天，你的心情如何？</h2><p>不需要解釋，先允許自己有這個感受。</p></div></div>
+      <div class="mood-buttons" role="group" aria-label="選擇今天的心情"><button type="button" class="mood-button" data-mood="開心" aria-pressed="false">☀️ <span>開心</span></button><button type="button" class="mood-button" data-mood="平靜" aria-pressed="false">🌿 <span>平靜</span></button><button type="button" class="mood-button" data-mood="疲憊" aria-pressed="false">☁️ <span>疲憊</span></button><button type="button" class="mood-button" data-mood="難過" aria-pressed="false">🌧️ <span>難過</span></button><button type="button" class="mood-button" data-mood="焦慮" aria-pressed="false">🌙 <span>焦慮</span></button></div>
+<img class="mood-sticker" src="assets/illustrations/sticker-bear.svg" alt="抱著愛心的小熊插畫" width="230" height="240" loading="lazy"><p id="mood-feedback" class="mood-feedback" aria-live="polite">選一個最貼近現在的感覺吧。</p>
+    </div></section>
+    <section class="quote-section"><div class="container"><div class="quote-card"><img class="quote-illustration" src="assets/illustrations/sticker-tea.svg" alt="暖暖熱茶與小花插畫" width="280" height="250" loading="lazy"><div><span class="mini-label">A NOTE TO YOURSELF · 給自己的一句話</span><p id="daily-quote" class="quote-text">你的步伐不需要和任何人一樣。</p><span class="quote-signature">— 今天也請好好愛自己</span></div><button id="new-quote" class="quote-refresh" type="button" aria-label="換一句鼓勵的話">↻ <span>換一句</span></button></div></div></section>
+    <section class="library-section" id="library"><div class="container">
+      <div class="section-title-row"><div><span class="mini-label">♡ WORDS THAT HEAL</span><h2>為心收藏一些<span>溫暖的文字。</span></h2><p>挑一篇適合現在的文章，慢慢讀，不必急。</p></div><img class="section-decoration" src="assets/illustrations/sticker-flowers.svg" alt="" width="285" height="195" loading="lazy"></div>
+      <div class="filter-wrap"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="搜尋情緒、關鍵字、文章…" aria-label="搜尋療癒文章"></label><div id="filter-buttons" class="filter-buttons" role="group" aria-label="文章分類"><button type="button" data-category="全部" class="filter active" aria-pressed="true">全部文章</button><button type="button" data-category="情緒照顧" class="filter" aria-pressed="false">情緒照顧</button><button type="button" data-category="自我接納" class="filter" aria-pressed="false">自我接納</button><button type="button" data-category="生活練習" class="filter" aria-pressed="false">生活練習</button></div></div>
+      <div class="results-row"><p id="results-label" aria-live="polite">正在整理文章…</p><span>TAKE WHAT YOU NEED ♡</span></div>
+      <div class="article-grid" id="article-grid" aria-live="polite"><p class="loading">正在讀取文章…</p></div>
+      <div id="empty-state" class="empty-state hidden"><span>🌼</span><h3>暫時沒有符合的文章</h3><p>換個詞試試看，或者看看其他分類。</p><button class="btn btn-outline" id="reset-filter" type="button">清除篩選</button></div>
+    </div></section>
+    <section class="explore-section"><div class="container"><div class="section-title-row"><div><span class="mini-label">✿ YOUR LITTLE ROUTINE</span><h2>今天，想怎麼<span>照顧自己？</span></h2></div></div><div class="explore-grid"><a href="practice.html" class="explore-card practice-card"><img class="explore-illustration" src="assets/illustrations/sticker-moon.svg" width="280" height="260" alt="月亮抱著雲朵的插畫" loading="eager"><span class="mini-label">A MOMENT OF CALM</span><h3>慢慢回到當下</h3><p>用簡單的感官練習，讓注意力回到身邊的世界。</p><span class="explore-link">開始練習 ↗</span></a><a href="journal.html" class="explore-card journal-card"><img class="explore-illustration" src="assets/illustrations/sticker-bunny.svg" width="270" height="275" alt="小兔抱著愛心的插畫" loading="eager"><span class="mini-label">A NOTE FOR TODAY</span><h3>寫給自己的日記</h3><p>把說不出口的心情，留在只屬於自己的小角落。</p><span class="explore-link">寫下心情 ↗</span></a><a href="guide.html" class="explore-card guide-card"><img class="explore-illustration" src="assets/illustrations/sticker-books.svg" width="250" height="270" alt="書本和小花插畫" loading="eager"><span class="mini-label">A GROWING SPACE</span><h3>一起讓網站長大</h3><p>看看 AI 如何依照 AGENTS.md，延續這份溫柔設計。</p><span class="explore-link">了解規則 ↗</span></a></div></div></section>
+    <section class="closing-note"><div class="container"><span>✦</span><p>你不需要先變得完美，才值得擁有平靜。</p><span>✦</span></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-wrap"><div><a class="brand" href="index.html"><span class="brand-icon">✿</span><span>心靈療癒室<small>THE GENTLE ROOM</small></span></a><p>給心一個休息的地方。</p></div><div class="footer-right"><div><a href="index.html">首頁</a><a href="practice.html">放鬆練習</a><a href="journal.html">心情日記</a><a href="guide.html">網站指南</a></div><small>這裡提供一般自我照顧資訊，不取代專業心理或醫療協助。若有立即危險，請聯絡當地緊急服務（台灣 119）。</small></div></div></footer>
+</body>
+</html>
